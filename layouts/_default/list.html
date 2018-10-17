@@ -1,3 +1,11 @@
 {{ define "main" }}
-  {{ partial "portfolio.html" . }}
+<div class="col-xs-12 col-sm-8 col-md-9 content-column">
+    {{ partial "mobile_nav_toggle.html" . }}
+    <div class="grid">
+        <div class="row">
+          {{ block "listItems" . }}
+          {{ end }}
+        </div>
+    </div>
+</div>
 {{ end }}
